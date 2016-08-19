@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#000000"
+    android:id="@+id/createkit_layout">
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#9620fff0" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner2"
+        android:background="#9620fff0"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_toRightOf="@+id/spinner"
+        android:layout_toEndOf="@+id/spinner"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner3"
+        android:background="#9620fff0"
+        android:layout_marginRight="61dp"
+        android:layout_marginEnd="61dp"
+        android:layout_alignTop="@+id/spinner2"
+        android:layout_toLeftOf="@+id/spinner4"
+        android:layout_toStartOf="@+id/spinner4" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner4"
+        android:background="#9620fff0"
+        android:layout_alignTop="@+id/spinner3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner5"
+        android:background="#9620fff0"
+        android:layout_alignTop="@+id/spinner6"
+        android:layout_toLeftOf="@+id/spinner2"
+        android:layout_toStartOf="@+id/spinner2" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner6"
+        android:background="#9620fff0"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignLeft="@+id/spinner2"
+        android:layout_alignStart="@+id/spinner2"
+        android:layout_marginTop="33dp" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner7"
+        android:background="#9620fff0"
+        android:layout_alignTop="@+id/spinner6"
+        android:layout_alignLeft="@+id/spinner3"
+        android:layout_alignStart="@+id/spinner3" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinner8"
+        android:background="#9620fff0"
+        android:layout_alignTop="@+id/spinner7"
+        android:layout_alignLeft="@+id/spinner4"
+        android:layout_alignStart="@+id/spinner4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Kit"
+        android:id="@+id/saveButton"
+        android:layout_marginBottom="38dp"
+        android:layout_above="@+id/spinner2"
+        android:layout_toLeftOf="@+id/spinner3"
+        android:layout_toStartOf="@+id/spinner3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/saveButton"
+        android:layout_above="@+id/saveButton"
+        android:layout_alignRight="@+id/spinner3"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kit Name:"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/spinner"
+        android:layout_above="@+id/saveButton"
+        android:layout_toLeftOf="@+id/saveButton"
+        android:layout_toStartOf="@+id/saveButton"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:gravity="center_vertical|end" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusText"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/saveButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText" />
+
+</RelativeLayout>
